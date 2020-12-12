@@ -1,89 +1,134 @@
 body {
-    background-color:hsl(256, 46%, 64%)
-}
-.main-container{
+    background-color:hsl(257, 40%, 49%);
     background-image: url('./images/bg-desktop.png');
-    background-size: cover;
-    background-position: 50% 50%
+    background-repeat: no-repeat;
+    
+    font-family: 'Open Sans', sans-serif;
+    display:flex;
+    justify-content: space-around;
+}
+img{
+    max-width: 100%;
+}
+/* CONTENT LOGO, IMAGE, AND HEADER/PARAGRAPH DIV*/
+
+.main-container{
+    
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    padding: 0  40px;
+
 }
 
-.logo img{
-    width: 15%;
-    position: relative;
-    top: 40px;
-    left:40px;
-    margin-bottom: 150px;
-}
-.content {
+    /*  LOGO IMAGE  */
+
+.logo {
     display: flex;
-    flex-direction: row ;
-    
-       
+    width: 100%;
+    justify-content: flex-start;
+    margin: 25px;
+   
 }
+.logo img {
+    width: 130px;;
+}
+
+    /* IMAGE AND HEADER /PARAGRAGH DIV */
+
+.content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    /* CONTENT IMAGE*/
+
 #image {
-   max-width: 90%;  
-   position: relative; 
-   left: 40px;  
+   
+   
+   
+   margin-bottom: 30px; 
+}
+
+    /* CONTENT HEADER AND PARAGRAPH */
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;  
+    font-family: 'Poppins', sans-serif;
+    color:white
 }
 
 .text {
-    font-size: 20px;
-    position: relative;
-   
-    text-align: left;
-}
-
-footer {
-    display:flex;
-    justify-content: flex-end;
-    position: relative;
-    top:25px;
-    right:30px
-
-}
-#twitter{
-    margin: 0 15px;
+    font-size: 18px;
+    
+    color: white;
+    text-align: center;
     
 }
 
-h1 {
-    font-weight: 600;
-    color:hsl(257, 40%, 49%);
-    font-size: 50px;
-    color: whitesmoke;
-}
+    /* BUTTON */
+
 .default {
     border-color: white;
-    color: hsl(257, 40%, 49%);
-    
-  }
-  
-  
-  button{
-      color: white;
-      border-radius: 20px;
-      width: 150px;
-      height: 50px;
-      background-color: white;
-  }
+    color: hsl(257, 40%, 49%);        
+}      
+button{
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 30px;
+    font-size: 18px
+}
 
-@media only screen and (min-width: 1280px) {
-h1 {
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    color:white;
+/*  FOOTER SOCIAL MEDIA ICONS  */
+.icons{
+    display: flex;
+    justify-content: space-around;
 }
-p {
-    font-family: 'Open Sans', sans-serif;
-    color: whitesmoke;
+.circle{
+    border:2px solid white;
+    border-radius: 60%;
+    margin: 0 15px;
+    padding:10px
 }
-}
-@media only screen and (max-width: 375px){
-    h1{
-        font-weight: 400;
+
+
+
+
+/* DISPLAY SIZES CSS  */
+
+@media only screen and (min-width: 1024px) {
+    
+    .text {   
+          
+        color: white;
+        text-align: center;
+        margin-left: 50px;  
+        
     }
-    p {
-        font-family: 'Open Sans', sans-serif;
-        color: whitesmoke;
+    .content {
+        display: flex;
+        flex-direction: row;
+        
+        width: 100vh
+    }
+    .main-container{
+        height: 80vh;
+    }
+    
+    .icons{
+        margin-top: 50px;
+        width: 100%;
+        justify-content: flex-end;
     }
 }
+
+
