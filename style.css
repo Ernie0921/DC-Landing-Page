@@ -1,11 +1,14 @@
 body {
     background-color:hsl(257, 40%, 49%);
-    background-image: url('./images/bg-desktop.png');
+    background-image: url(./images/bg-desktop.png);
+   
     background-repeat: no-repeat;
     
     font-family: 'Open Sans', sans-serif;
     display:flex;
     justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 img{
     max-width: 100%;
@@ -20,6 +23,8 @@ img{
    
     align-items: center;
     padding: 0  40px;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
@@ -92,12 +97,19 @@ button{
 .icons{
     display: flex;
     justify-content: space-around;
+    
 }
 .circle{
     border:2px solid white;
     border-radius: 60%;
-    margin: 0 15px;
-    padding:10px
+    
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+
 }
 
 
